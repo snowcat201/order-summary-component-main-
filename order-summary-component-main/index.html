@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Order summary card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap');
+
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body{
+      background: url(images/pattern-background-desktop.svg);
+      background: #efe2fd;
+      padding-top: 50px;
+      margin: auto;
+      font-family: 'Red Hat Display', sans-serif;
+    }
+    .container{
+      width: 56vh;
+      background: #fefefe;
+      margin: auto;
+      border-radius: 20px;
+      box-shadow: 0 0 15px 0 rgba(0,0,0,0.3);
+      overflow: hidden;
+      flex-wrap: wrap;
+    }
+    .bg-photo{
+    }
+    .bg-photo img {
+      width: 100%;
+    }
+    .center{
+      /*text-align: center;*/
+      padding: 20px;
+      /*position: relative;*/
+    }
+    h3 {
+      font-size: 1.9rem;
+      font-weight: 900;
+      margin-top: 10px;
+      padding: 5px;
+      text-align: center;
+    }
+    .center-text{
+      padding: 10px;
+      margin: 5px;
+      color: #696969;
+      text-align: center;
+    }
+    .box{
+      background: #F8F9FE;
+      display: flex;
+      align-items: center;
+      padding: .6em;
+      margin: 13px;
+      justify-content: space-evenly;
+      border-radius: 5px;
+    }
+    .box-btn{
+      text-decoration: underline;
+      /* display: inherit; */
+      border: none;
+      color: #5C54C0;
+      background: none;
+      font-size: .8rem;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .box-btn:hover{
+      text-decoration: none;
+      color: #826fec;
+    }
+    .box-text{
+      position: relative;
+      /* right: 20px; */
+      margin: 0 90px 0 20px;
+    }
+    .box-text p:nth-child(1){
+      font-weight: bold;
+      font-size: 18px;
+    }
+    .box-text p:nth-child(2){
+      font-weight: lighter;
+      font-size: 15px;
+    }
+    .payment-box{
+      text-align: center;
+      width: auto;
+      /*padding: .6em;*/
+      margin: 13px;
+    }
+    .payment-box a:nth-child(1) {
+      text-decoration: none;
+      color: #ffffff;
+      background: #382ae1;
+      width: 100%;
+      display: inline-block;
+      padding: .6em;
+      margin: auto;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: 0.3s;
+      box-shadow: 0 20px 10px 0 rgba(0, 0, 0, .09);
+    }
+    .payment-box a:nth-child(1):hover{
+      background: #6a60f3;
+    }
+
+    .payment-box a:nth-child(2){
+      text-decoration: none;
+      color: grey;
+      font-size: 16px;
+      font-weight: bold;
+      display: inline-block;
+      /*background: #ebc4c4;*/
+      padding: .6em;
+      border-radius: 5px;
+      margin-top: 8px;
+      width: auto;
+    }
+    .payment-box a:nth-child(2):hover{
+      color: #000000;
+    }
+
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+
+  </style>
+</head>
+<body>
+
+<div class="container">
+
+  <section class="bg-photo">
+    <img class="bg-photo" src="images/illustration-hero.svg" alt="">
+  </section>
+
+<!--  <img class="bg-photo" src="images/illustration-hero.svg" alt="">-->
+
+
+  <div class="center">
+    <h3>Order Summary</h3>
+    <!--  <hr>-->
+
+    <p class="center-text">  You can now listen to millions of songs, audiobooks, and podcasts on any
+      device anywhere you like!
+    </p>
+
+    <div class="box">
+      <img src="images/icon-music.svg" alt="">
+
+      <div class="box-text">
+        <p>
+          Annual Plan
+        </p>
+        <p>
+          $59.99/year
+        </p>
+      </div>
+
+      <button class="box-btn">Change</button>
+
+    </div>
+
+    <div class="payment-box">
+      <a href="#">Proceed to Payment</a>
+
+      <a href="#">Cancel Order</a>
+    </div>
+  </div>
+  
+</div>
+  
+<!--  <div class="attribution">-->
+<!--    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. -->
+<!--    Coded by <a href="#">septem</a>.-->
+<!--  </div>-->
+</body>
+</html>
